@@ -1,0 +1,24 @@
+<ion-view view-title="Smoothies" ng-controller="ApplicationController as app">
+      <ion-content>
+          <div class="list card">
+              <div class="item item-avatar">
+                  <img src="img/smoothie.jpg">
+                  <h2>Smoothie Booth</h2>
+                  <p>The best smoothie in LA</p>
+
+              </div>
+
+              <a class="item item-icon-left assertive">
+                <i class="icon ion-wineglass"></i>
+                   Start drinking today
+            </a>
+          </div>
+        <div class="list card">
+            <a href="#/app/smoothies/{{smoothie.id}}" class="item item-icon-left" ng-repeat="smoothie in app.smoothies">
+                <i class="icon ion-ios-pint"></i>
+                {{smoothie.name}}
+            </a>
+        </div>
+
+      </ion-content>
+    </ion-view>
